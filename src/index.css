@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.header-main {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.header-tab {
+  margin: 20px;
+  cursor: pointer;
+}
+.profile-container {
+  text-align: center;
+  margin: 20px;
+  border: 1px solid black;
+}
+.form-field {
+  margin: 20px;
+}
+
+.input-field {
+  padding: 5px;
+}
+.button-group {
+  text-align: center;
+}
+.button-group button {
+  margin: 5px;
+  cursor: pointer;
+}
+
+.dark-theme{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color:#121212;;
+  
+}
+
+.light-theme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  
+}
+
+.body-container-darkMode, .body-container {
+  border: 1px solid black;
+  height: 400px;
+  width: 50%;
+  background-color: #faf4f4 !important;
+}
+
+.tab-item{
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.tab-item-green{
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: underline;
+  color: green;
+}
