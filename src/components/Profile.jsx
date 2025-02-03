@@ -7,7 +7,7 @@ const Profile = ({ obj, setObj, error }) => {
    ...prev, [key] :e.target.value
     }))
   }
-  const { nameError, emailError, ageError } = error;
+
 
   return (
     <div className="profile-container">
@@ -21,7 +21,7 @@ const Profile = ({ obj, setObj, error }) => {
           value={name}
           onChange={(e) => handleChange(e, "name")}
         />
-        <label style={{color:"red"}}>{nameError}</label>
+        <label style={{color:"red"}}>{error.name}</label>
       </div>
       <div className="form-field">
         <label className="label">Age<span style={{color:"red"}}>*</span> :</label>
@@ -33,7 +33,7 @@ const Profile = ({ obj, setObj, error }) => {
           value={age}
           onChange={(e) => handleChange(e, "age")}
         />
-         <label style={{color:"red"}}>{ageError}</label>
+         <label style={{color:"red"}}>{error.age}</label>
       </div>
       <div className="form-field">
         <label className="label">Email<span style={{color:"red"}}>*</span> :</label>
@@ -43,8 +43,9 @@ const Profile = ({ obj, setObj, error }) => {
           name="email"
           value={email}
           onChange={(e) => handleChange(e, "email")}
+          type="email"
         />
-         <label style={{color:"red"}}>{emailError}</label>
+         <label style={{color:"red"}}>{error.email}</label>
       </div>
     </div>
   );

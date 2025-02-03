@@ -1,6 +1,6 @@
 import React from "react";
 
-const Intreast = ({ obj, setObj }) => {
+const Intreast = ({ obj, setObj , error}) => {
   const { intrest } = obj;
 
   const handleChange = (e) => {
@@ -49,6 +49,7 @@ const Intreast = ({ obj, setObj }) => {
           onChange={handleChange}
         />
       </div>
+      <label style={{color:"red"}}>{error.intrest}</label>
     </div>
   );
 };
